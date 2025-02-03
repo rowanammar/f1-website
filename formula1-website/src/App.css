@@ -396,9 +396,9 @@ ul.example-2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 
-/* === Flip Card Styles === */
 .flip-card {
   background-color: transparent;
   width: 190px;
@@ -434,6 +434,7 @@ ul.example-2 {
   border: 1px solid coral;
   border-radius: 1rem;
   padding: 10px;
+  overflow: hidden; 
 }
 
 .flip-card-front {
@@ -447,17 +448,72 @@ ul.example-2 {
 
 /* === Driver Image Styling === */
 .flip-card-front .driver-image {
-  width: 80px;
-  height: 80px;
+  /* Set width relative to card with auto height */
+  width: 80%;
+  height: auto;
+  max-height: 50%; /* Ensure image doesn't take more than half the card height */
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
 }
 
-/* === Title Styling (used for both sides) === */
+/* === Title (Driver Name) Styling === */
 .title {
-  font-size: 1.2em;
+  font-size: clamp(1rem, 2vw, 1.2rem);  /* scales between 1rem and 1.2rem */
   font-weight: 900;
   text-align: center;
   margin: 5px 0;
+  white-space: nowrap;      /* Prevents text from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;  /* Adds "..." if the text is too long */
+}
+
+/*-----------Races---------------*/
+
+
+.races-page {
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.races-page h1 {
+  margin-bottom: 20px;
+  color: #171543;
+}
+
+.races-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.race-card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 280px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.race-card h2.race-name {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #171543;
+}
+
+.race-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.race-card p strong {
+  color: #171543;
 }

@@ -13,7 +13,7 @@ function NavBar() {
         <li><Link to="/drivers" >Drivers</Link></li>
         <li><Link to="/cars">Cars</Link></li>
         <li><Link to="/races">Races</Link></li>
-        <li><Link to="/teams">Teams</Link></li>
+        <li><Link to="/standings">Standings</Link></li>
       </ul>
         
     </nav>

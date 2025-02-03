@@ -11,7 +11,7 @@ function NavBar() {
 
       <ul className="nav-links">
         <li><Link to="/drivers" >Drivers</Link></li>
-        <li><Link to="/cars">Cars</Link></li>
+        <li><Link to="/circuits">Circuits</Link></li>
         <li><Link to="/races">Races</Link></li>
         <li><Link to="/standings">Standings</Link></li>
       </ul>

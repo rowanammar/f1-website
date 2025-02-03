@@ -391,7 +391,6 @@ ul.example-2 {
   color: #171543;
 }
 
-/* === Grid Layout for Cards === */
 .drivers-grid {
   display: flex;
   flex-wrap: wrap;
@@ -446,7 +445,6 @@ ul.example-2 {
   transform: rotateY(180deg);
 }
 
-/* === Driver Image Styling === */
 .flip-card-front .driver-image {
   /* Set width relative to card with auto height */
   width: 80%;
@@ -457,7 +455,7 @@ ul.example-2 {
   margin-bottom: 10px;
 }
 
-/* === Title (Driver Name) Styling === */
+
 .title {
   font-size: clamp(1rem, 2vw, 1.2rem);  /* scales between 1rem and 1.2rem */
   font-weight: 900;
@@ -516,4 +514,144 @@ ul.example-2 {
 
 .race-card p strong {
   color: #171543;
+}
+
+/*--------------standings-------------*/
+.standings-page {
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.standings-page h1 {
+  color: #171543;
+  margin-bottom: 30px;
+}
+
+.standings-section h2 {
+  color: #171543;
+  margin: 20px 0 10px;
+}
+
+.standings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.standing-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.standing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.standing-card h3 {
+  margin-bottom: 10px;
+  color: #171543;
+  font-size: 1.2rem;
+}
+
+.standing-card p {
+  margin: 5px 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.standing-card p strong {
+  color: #171543;
+}
+
+/*-----------------circuits--------------------------*/
+
+.carousel-container {
+  perspective: 1000px; /*dah 3D perspective */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(135deg, #ebebeb, #737373); /* Dark gradient background */
+  overflow: hidden;
+}
+
+
+.carousel {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  transform-style: preserve-3d; /* 3shan yfdal shaklo 3d */
+  animation: rotateCarousel 20s linear infinite; 
+  transform-origin: center center; /* Rotate around its own center */
+}
+
+.carousel:hover {
+  animation-play-state: paused;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.5s ease, z-index 0.5s ease, box-shadow 0.5s ease;
+  transform-style: preserve-3d;
+  transform: rotateY(var(--rotate)) translateZ(400px); /* Position in 3D space */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the entire image is visible */
+  border-radius: 10px;
+}
+
+
+.carousel-item.hovered {
+  transform: rotateY(var(--rotate)) scale(1.3) translateZ(450px); /* Pop forward and scale up */
+  z-index: 10; /* Bring to the front */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* glowwwwww */
+}
+
+.carousel-item.hovered img {
+  transform: scale(1.1); 
+}
+
+.circuit-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.carousel-item.hovered .circuit-info {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes rotateCarousel {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }

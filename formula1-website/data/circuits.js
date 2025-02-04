@@ -1,24 +1,99 @@
 const circuits = [
-    { name: "Bahrain", image: " bahrain.png", info: "Located in Sakhir, known for night racing." },
-    { name: "Jeddah", image: " jeddah.png", info: "Fastest street circuit in F1." },
-    { name: "Suzuka", image: "suzuka.png", info: "Figure-eight layout, legendary in F1." },
-    { name: "Shanghai", image: "shanghai.png", info: "Hosts the Chinese Grand Prix." },
-    { name: "Monaco", image: "monaco.png", info: "Historic street circuit with tight corners." },
-    { name: "Singapore", image: "singapore.png", info: "First-ever night race in F1 history." },
-    { name: "Monza", image: "monza.png", info: "Temple of Speed, fastest circuit in F1." },
-    { name: "Spa", image: "spa.png", info: "Famous for Eau Rouge and unpredictable weather." },
-    { name: "Melbourne", image: "melbourne.png", info: "Opens the F1 season in Australia." },
-    { name: "Silverstone", image: "silverstone.png", info: "Home of British motorsport." },
-    { name: "Canada", image: "canada.png", info: "Circuit Gilles Villeneuve, known for walls." },
-    { name: "Hungary", image: "hungary.png", info: "Tight and twisty, called 'Monaco without walls'." },
-    { name: "Austria", image: "austria.png", info: "Scenic Red Bull Ring, high altitude." },
-    { name: "Azerbaijan", image: "azerbaijan.png", info: "Fast street circuit with castle section." },
-    { name: "USA", image: "usa.png", info: "Circuit of the Americas, features elevation changes." },
-    { name: "Abu Dhabi", image: "abudhabi.png", info: "Yas Marina, season-ending night race." },
-    { name: "Brazil", image: "brazil.png", info: "Interlagos, unpredictable weather and history." },
-    { name: "Qatar", image: " qatar.png", info: "Losail Circuit, night race in the desert." },
-    { name: "Mexico", image: " mexico.png", info: "High-altitude Autódromo Hermanos Rodríguez." },
-  ];
-  
-  export default circuits;
-  
+  {
+    name: "Bahrain",
+    image: "bahrain.png",
+    info: "Sakhir's desert track, hosting night races since 2014.",
+  },
+  {
+    name: "Jeddah",
+    image: "jeddah.png",
+    info: "High-speed Saudi street circuit debuting in 2021.",
+  },
+  {
+    name: "Suzuka",
+    image: "suzuka.png",
+    info: "Japan's figure-eight track, famous for its 'S' Curves.",
+  },
+  {
+    name: "Shanghai",
+    image: "shanghai.png",
+    info: "Chinese Grand Prix venue with '上'-shaped layout.",
+  },
+  {
+    name: "Monaco",
+    image: "monaco.png",
+    info: "Historic street circuit with tight corners and elevation changes.",
+  },
+  {
+    name: "Singapore",
+    image: "singapore.png",
+    info: "Marina Bay hosts F1's inaugural night race since 2008.",
+  },
+  {
+    name: "Monza",
+    image: "monza.png",
+    info: "Italy's 'Temple of Speed' with long straights.",
+  },
+  {
+    name: "Spa",
+    image: "spa.png",
+    info: "Belgian track known for Eau Rouge and variable weather.",
+  },
+  {
+    name: "Melbourne",
+    image: "melbourne.png",
+    info: "Albert Park's semi-street circuit opens the F1 season.",
+  },
+  {
+    name: "Silverstone",
+    image: "silverstone.png",
+    info: "Former airfield, home of the British Grand Prix.",
+  },
+  {
+    name: "Canada",
+    image: "canada.png",
+    info: "Montreal's Circuit Gilles Villeneuve with the 'Wall of Champions'.",
+  },
+  {
+    name: "Hungary",
+    image: "hungary.png",
+    info: "Hungaroring's tight, twisty layout near Budapest.",
+  },
+  {
+    name: "Austria",
+    image: "austria.png",
+    info: "Scenic Red Bull Ring with notable elevation changes.",
+  },
+  {
+    name: "Azerbaijan",
+    image: "azerbaijan.png",
+    info: "Baku's fast street circuit featuring a narrow castle section.",
+  },
+  {
+    name: "USA",
+    image: "usa.png",
+    info: "Austin's Circuit of the Americas with significant elevation changes.",
+  },
+  {
+    name: "Abu Dhabi",
+    image: "abudhabi.png",
+    info: "Yas Marina hosts the season finale under the lights.",
+  },
+  {
+    name: "Brazil",
+    image: "brazil.png",
+    info: "São Paulo's Interlagos circuit with passionate fans.",
+  },
+  {
+    name: "Qatar",
+    image: "qatar.png",
+    info: "Losail's desert track debuted in F1 in 2021.",
+  },
+  {
+    name: "Mexico",
+    image: "mexico.png",
+    info: "High-altitude Autódromo Hermanos Rodríguez with stadium section.",
+  },
+];
+
+export default circuits;

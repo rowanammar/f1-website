@@ -18,7 +18,7 @@ function Footer() {
         not be up to date.
       </p>
       <div className="links">
-        <a href="https://github.com/rowanammar/f1-website" target="_blank">
+        <a href="https://github.com/rowanammar/formula1-website" target="_blank">
           Repo on GitHub
         </a>
         <span className="separator">|</span>

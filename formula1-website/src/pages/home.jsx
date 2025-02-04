@@ -3,7 +3,7 @@ function Home() {
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
-        <img src="/cars.jpg" alt="Racing Cars" className="hero-image" />
+        <img src="cars.jpg" alt="Racing Cars" className="hero-image" />
         <div className="hero-overlay">
           <h1>Experience the Thrill of Formula 1</h1>
         </div>

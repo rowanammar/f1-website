@@ -7,7 +7,7 @@ const driversData = [
       team: "Scuderia Ferrari HP",
       frontColor: "linear-gradient(120deg, #DC0000, #FF0000)", 
       backColor: "linear-gradient(120deg, #B22222, #8B0000)",
-      image: "/leclerc.png",
+      image: "leclerc.png",
       info: "A brilliant talent driving for Ferrari, known for his qualifying speed and racecraft (#16)."
     },
     {
@@ -16,7 +16,7 @@ const driversData = [
       team: "Scuderia Ferrari HP",
       frontColor: "linear-gradient(120deg, #DC0000, #FF0000)",
       backColor: "linear-gradient(120deg, #B22222, #8B0000)",
-      image: "/hamilton.png",
+      image: "hamilton.png",
       info: "Seven-time champion now making waves at Ferrari with his experience and pace (#44)."
     },
     {
@@ -25,7 +25,7 @@ const driversData = [
       team: "Mercedes-AMG Petronas",
       frontColor: "linear-gradient(120deg, #00D2BE, #008C95)", 
       backColor: "linear-gradient(120deg, #007A7A, #005E5E)",
-      image: "/russel.png",
+      image: "russel.png",
       info: "A rising star at Mercedes with incredible speed and consistency (#63)."
     },
     {
@@ -34,7 +34,7 @@ const driversData = [
       team: "Mercedes-AMG Petronas",
       frontColor: "linear-gradient(120deg, #00D2BE, #008C95)",
       backColor: "linear-gradient(120deg, #007A7A, #005E5E)",
-      image: "/kimi.png",
+      image: "kimi.png",
       info: "A promising rookie making his debut for Mercedes with a blend of skill and flair (#12)."
     },
     {
@@ -43,7 +43,7 @@ const driversData = [
       team: "Oracle Red Bull Racing",
       frontColor: "linear-gradient(120deg, #1E41FF, #0819e8)",
       backColor: "linear-gradient(120deg, #0d11cc, #040c8c)",
-      image: "/max.png",
+      image: "max.png",
       info: "Dominant force in F1, known for his aggressive and record-breaking performances (#1)."
     },
     {
@@ -52,7 +52,7 @@ const driversData = [
       team: "Oracle Red Bull Racing",
       frontColor: "linear-gradient(120deg, #1E41FF, #0819e8)",
       backColor: "linear-gradient(120deg, #0d11cc, #040c8c)",
-      image: "/lawson.png",
+      image: "lawson.png",
       info: "A dynamic talent bringing youthful energy and speed to Red Bull Racing (#30)."
     },
     {
@@ -61,7 +61,7 @@ const driversData = [
       team: "McLaren",
       frontColor: "linear-gradient(120deg, #FF7F00, #FFA500)", 
       backColor: "linear-gradient(120deg, #FF8C00, #FF4500)",
-      image: "/lando.png",
+      image: "lando.png",
       info: "A fan favorite with creative overtaking and consistent performance for McLaren (#4)."
     },
     {
@@ -70,7 +70,7 @@ const driversData = [
       team: "McLaren",
       frontColor: "linear-gradient(120deg, #FF7F00, #FFA500)",
       backColor: "linear-gradient(120deg, #FF8C00, #FF4500)",
-      image: "/piastri.png",
+      image: "piastri.png",
       info: "A rookie with immense potential, ready to challenge the grid alongside Norris (#81)."
     },
     {
@@ -79,7 +79,7 @@ const driversData = [
       team: "Aston Martin Aramco",
       frontColor: "linear-gradient(120deg, #006BB6, #00509E)", 
       backColor: "linear-gradient(120deg, #004080, #003060)",
-      image: "/alonso.png",
+      image: "alonso.png",
       info: "The veteran whose experience and tenacity keep him competitive at Aston Martin (#14)."
     },
     {
@@ -88,7 +88,7 @@ const driversData = [
       team: "Aston Martin Aramco",
       frontColor: "linear-gradient(120deg, #006BB6, #00509E)",
       backColor: "linear-gradient(120deg, #004080, #003060)",
-      image: "/lance.png",
+      image: "lance.png",
       info: "Bringing determination and pace to Aston Martin’s lineup (#18)."
     },
     {
@@ -97,7 +97,7 @@ const driversData = [
       team: "BWT Alpine",
       frontColor: "linear-gradient(120deg, #00A1E4, #0072CE)",
       backColor: "linear-gradient(120deg, #005BB5, #004C99)",
-      image: "/gasly.png",
+      image: "gasly.png",
       info: "Known for his precise driving and adaptability, representing Alpine (#10)."
     },
     {
@@ -106,7 +106,7 @@ const driversData = [
       team: "BWT Alpine",
       frontColor: "linear-gradient(120deg, #00A1E4, #0072CE)",
       backColor: "linear-gradient(120deg, #005BB5, #004C99)",
-      image: "/doohan.png",
+      image: "doohan.png",
       info: "A young and determined talent showing great promise with Alpine (#7)."
     },
     {
@@ -115,7 +115,7 @@ const driversData = [
       team: "MoneyGram Haas F1",
       frontColor: "linear-gradient(120deg, #FFD700, #FFC200)", 
       backColor: "linear-gradient(120deg, #E6B800, #CC9E00)",
-      image: "/ocon.png",
+      image: "ocon.png",
       info: "A consistent performer with clever racecraft for Haas (#31)."
     },
     {
@@ -124,7 +124,7 @@ const driversData = [
       team: "MoneyGram Haas F1",
       frontColor: "linear-gradient(120deg, #FFD700, #FFC200)",
       backColor: "linear-gradient(120deg, #E6B800, #CC9E00)",
-      image: "/oliver.png",
+      image: "oliver.png",
       info: "A promising rookie bringing fresh energy and pace to Haas (#87)."
     },
     {
@@ -133,7 +133,7 @@ const driversData = [
       team: "Williams Racing",
       frontColor: "linear-gradient(120deg, #005AFF, #003ED6)", 
       backColor: "linear-gradient(120deg, #003ED6, #002BA1)",
-      image: "/albon.png",
+      image: "albon.png",
       info: "A talented driver known for his aggressive style and potential at Williams (#23)."
     },
     {
@@ -142,7 +142,7 @@ const driversData = [
       team: "Williams Racing",
       frontColor: "linear-gradient(120deg, #005AFF, #003ED6)",
       backColor: "linear-gradient(120deg, #003ED6, #002BA1)",
-      image: "/sainz.png",
+      image: "sainz.png",
       info: "Bringing experience and precision to the grid with Williams (#55)."
     },
     {
@@ -151,7 +151,7 @@ const driversData = [
       team: "Kick Sauber F1",
       frontColor: "linear-gradient(120deg, #800080, #9932CC)", 
       backColor: "linear-gradient(120deg, #6A0DAD, #4B0082)",
-      image: "/nico.png",
+      image: "nico.png",
       info: "A veteran known for his technical skill and consistency, representing Kick Sauber (#27)."
     },
     {
@@ -160,7 +160,7 @@ const driversData = [
       team: "Kick Sauber F1",
       frontColor: "linear-gradient(120deg, #800080, #9932CC)",
       backColor: "linear-gradient(120deg, #6A0DAD, #4B0082)",
-      image: "/gabriel.png",
+      image: "gabriel.png",
       info: "An emerging talent ready to impress with his dynamic driving for Kick Sauber (#5)."
     },
     {
@@ -169,7 +169,7 @@ const driversData = [
       team: "Visa Cash App Racing Bulls F1",
       frontColor: "linear-gradient(120deg, #FF4500, #FF6347)", 
       backColor: "linear-gradient(120deg, #CD3700, #B22222)",
-      image: "/yuki.png",
+      image: "yuki.png",
       info: "A determined driver known for his aggressive and fearless approach (#22)."
     },
     {
@@ -178,7 +178,7 @@ const driversData = [
       team: "Visa Cash App Racing Bulls F1",
       frontColor: "linear-gradient(120deg, #FF4500, #FF6347)",
       backColor: "linear-gradient(120deg, #CD3700, #B22222)",
-      image: "/isack.png",
+      image: "isack.png",
       info: "A rising talent with impressive pace and consistency for Bulls F1 (#6)."
     },
     {
@@ -187,7 +187,7 @@ const driversData = [
       team: "McLaren",
       frontColor: "linear-gradient(120deg, #FF7F00, #FFA500)",
       backColor: "linear-gradient(120deg, #FF8C00, #FF4500)",
-      image: "/senna.png",
+      image: "senna.png",
       info: "Three-time World Champion whose mastery and passion left an indelible mark on F1."
     },
     {
@@ -196,7 +196,7 @@ const driversData = [
       team: "McLaren",
       frontColor: "linear-gradient(120deg, #FF7F00, #FFA500)",
       backColor: "linear-gradient(120deg, #FF8C00, #FF4500)",
-      image: "/alain.png",
+      image: "alain.png",
       info: "Known as 'The Professor' for his strategic brilliance and four World Championships."
     },
     {
@@ -205,7 +205,7 @@ const driversData = [
       team: "Ferrari",
       frontColor: "linear-gradient(120deg, #DC0000, #FF0000)",
       backColor: "linear-gradient(120deg, #B22222, #8B0000)",
-      image: "/schumacher.png",
+      image: "schumacher.png",
       info: "Seven-time World Champion who set benchmarks in performance and records with Ferrari."
     },
     {
@@ -214,7 +214,7 @@ const driversData = [
       team: "Ferrari",
       frontColor: "linear-gradient(120deg, #DC0000, #FF0000)",
       backColor: "linear-gradient(120deg, #B22222, #8B0000)",
-      image: "/lauda.png",
+      image: "lauda.png",
       info: "Famous for his remarkable recovery and three World Championships, a true icon of F1."
     }
   ];

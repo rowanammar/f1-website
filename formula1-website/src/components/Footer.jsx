@@ -34,7 +34,7 @@ function Footer() {
               &times;
             </button>
             <div className="about-header">
-              <img src="/rue.png" alt="sorty" className="profile-photo" />
+              <img src="rue.png" alt="sorty" className="profile-photo" />
               <div className="about-title">
                 <h2>About Me</h2>
                 <p>

@@ -28,6 +28,6 @@ Welcome to **F1 Portal** – a fun and interactive website built to celebrate th
 
 ## Try It Out!
 
-Experience the adrenaline of F1 for yourself. Check out the live site here: [F1 Portal Live]()
+Experience the adrenaline of F1 for yourself. Check out the live site here: [F1 Portal Live](https://formula1-website-5xarotg4f-rawans-projects-9230ed37.vercel.app/)
 
 enjoy the ride!

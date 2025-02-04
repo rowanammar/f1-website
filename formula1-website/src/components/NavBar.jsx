@@ -1,6 +1,13 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function NavBar() {
+  const [isNavVisible, setIsNavVisible] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavVisible(!isNavVisible);
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -9,13 +16,19 @@ function NavBar() {
         </Link>
       </div>
 
-      <ul className="nav-links">
-        <li><Link to="/drivers" >Drivers</Link></li>
-        <li><Link to="/circuits">Circuits</Link></li>
-        <li><Link to="/races">Races</Link></li>
-        <li><Link to="/standings">Standings</Link></li>
+ 
+      <div className="hamburger" onClick={toggleNav}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
+
+      <ul className={`nav-links ${isNavVisible ? "active" : ""}`}>
+        <li><Link to="/drivers" onClick={toggleNav}>Drivers</Link></li>
+        <li><Link to="/circuits" onClick={toggleNav}>Circuits</Link></li>
+        <li><Link to="/races" onClick={toggleNav}>Races</Link></li>
+        <li><Link to="/standings" onClick={toggleNav}>Standings</Link></li>
       </ul>
-        
     </nav>
   );
 }

@@ -69,6 +69,43 @@ button:hover {
 .nav-links a:hover {
   color: #222222
 }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FF1801;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 1000000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
 
 /*-----------------HOME--------------------------*/
 .hero {
@@ -168,7 +205,6 @@ button:hover {
 
 /*-----------------FOOTER--------------------------*/
 
-/* === Footer Styles === */
 .footer {
   background-color: #181818;
   padding: 20px;
@@ -217,7 +253,6 @@ button:hover {
   color: #fff;
 }
 
-/* === Modal Overlay === */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -283,7 +318,7 @@ button:hover {
   color: #555;
 }
 
-/* === Social Links (Using Provided Uiverse.io Styles) === */
+/* === Social Links (Using  Uiverse.io Styles) === */
 ul.example-2 {
   display: flex;
   justify-content: center;
@@ -404,6 +439,7 @@ ul.example-2 {
   height: 254px;
   perspective: 1000px;
   margin: 15px;
+  cursor: pointer; /* Indicate it's clickable */
 }
 
 .flip-card-inner {
@@ -416,6 +452,10 @@ ul.example-2 {
 }
 
 .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner.is-flipped {
   transform: rotateY(180deg);
 }
 
@@ -433,7 +473,7 @@ ul.example-2 {
   border: 1px solid coral;
   border-radius: 1rem;
   padding: 10px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .flip-card-front {
@@ -446,24 +486,22 @@ ul.example-2 {
 }
 
 .flip-card-front .driver-image {
-  /* Set width relative to card with auto height */
   width: 80%;
   height: auto;
-  max-height: 50%; /* Ensure image doesn't take more than half the card height */
+  max-height: 50%;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
 }
 
-
 .title {
-  font-size: clamp(1rem, 2vw, 1.2rem);  /* scales between 1rem and 1.2rem */
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 900;
   text-align: center;
   margin: 5px 0;
-  white-space: nowrap;      /* Prevents text from wrapping */
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;  /* Adds "..." if the text is too long */
+  text-overflow: ellipsis;
 }
 
 /*-----------Races---------------*/
@@ -575,56 +613,60 @@ ul.example-2 {
 /*-----------------circuits--------------------------*/
 
 .carousel-container {
-  perspective: 1000px; /*dah 3D perspective */
+  perspective: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full viewport height */
-  background: linear-gradient(135deg, #ebebeb, #737373); /* Dark gradient background */
+  background: linear-gradient(135deg, #ebebeb, #737373);
   overflow: hidden;
 }
 
-
 .carousel {
   position: relative;
-  width: 240px;
-  height: 240px;
-  transform-style: preserve-3d; /* 3shan yfdal shaklo 3d */
-  animation: rotateCarousel 20s linear infinite; 
-  transform-origin: center center; /* Rotate around its own center */
+  /* Set --carousel-size to 80vw or 240px (whichever is smaller) */
+  --carousel-size: min(80vw, 240px);
+  width: var(--carousel-size);
+  height: var(--carousel-size);
+  transform-style: preserve-3d;
+  animation: rotateCarousel 20s linear infinite;
+  transform-origin: center center;
 }
 
 .carousel:hover {
   animation-play-state: paused;
 }
 
+
 .carousel-item {
   position: absolute;
-  width: 100px;
-  height: 180px;
+  width: calc(0.4167 * var(--carousel-size));
+  height: calc(0.75 * var(--carousel-size));
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.5s ease, z-index 0.5s ease, box-shadow 0.5s ease;
   transform-style: preserve-3d;
-  transform: rotateY(var(--rotate)) translateZ(400px); /* Position in 3D space */
+  /* Adjust the 3D translateZ relative to the carousel size
+     Original translateZ = 400px → 400/240 ≈ 1.6667 */
+  transform: rotateY(var(--rotate)) translateZ(calc(1.6667 * var(--carousel-size)));
 }
 
 .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Ensure the entire image is visible */
+  object-fit: contain;
   border-radius: 10px;
 }
 
 
 .carousel-item.hovered {
-  transform: rotateY(var(--rotate)) scale(1.3) translateZ(450px); /* Pop forward and scale up */
-  z-index: 10; /* Bring to the front */
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* glowwwwww */
+  transform: rotateY(var(--rotate)) scale(1.3) translateZ(calc(1.875 * var(--carousel-size)));
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 .carousel-item.hovered img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .circuit-info {
@@ -647,6 +689,7 @@ ul.example-2 {
   visibility: visible;
 }
 
+/* Keyframes for carousel rotation */
 @keyframes rotateCarousel {
   from {
     transform: rotateY(0deg);

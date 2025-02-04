@@ -587,8 +587,8 @@ ul.example-2 {
 
 .carousel {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 240px;
+  height: 240px;
   transform-style: preserve-3d; /* 3shan yfdal shaklo 3d */
   animation: rotateCarousel 20s linear infinite; 
   transform-origin: center center; /* Rotate around its own center */
@@ -600,7 +600,7 @@ ul.example-2 {
 
 .carousel-item {
   position: absolute;
-  width: 180px;
+  width: 100px;
   height: 180px;
   border-radius: 10px;
   overflow: hidden;

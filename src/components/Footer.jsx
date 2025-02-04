@@ -46,7 +46,7 @@ function Footer() {
             <ul className="social-links example-2">
               <li className="icon-content">
                 <a
-                  href="www.linkedin.com/in/rawan523"
+                  href="https://www.linkedin.com/in/rawan523/"
                   aria-label="LinkedIn"
                   data-social="linkedin"
                   target="_blank"
